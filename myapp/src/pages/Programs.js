@@ -34,7 +34,7 @@ function Programs() {
             disableOnInteraction: false, 
           }}
           pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
+          // scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
           className='slider_wrap'
@@ -51,4 +51,4 @@ function Programs() {
     );
   }
   
-  export default Programs;
+export default Programs;

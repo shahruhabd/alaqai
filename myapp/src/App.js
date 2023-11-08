@@ -2,6 +2,8 @@ import './css/app.css'
 import Main from './pages/Main';
 import Programs from './pages/Programs';
 import Price from './pages/Price';
+import About from './pages/About';
+
 function App() {
   return (
     <div className="App">
@@ -9,6 +11,7 @@ function App() {
         <Main />
         <Programs />
         <Price /> 
+        <About />
       </div>
     </div>
   );

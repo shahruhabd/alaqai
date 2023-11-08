@@ -1,0 +1,46 @@
+.about_wrapper {
+    height: 100vh;
+}
+.about_header {
+    background-color: #AFC5FF;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 900;
+}
+.about_content {
+    max-width: 1280px;
+    height: 40vh;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.about_prg {
+    font-size: 18px;
+}
+.about_prg_title {
+    font-weight: 700;
+}
+.about_prg_text {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.about_photos {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 0 40px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40%;
+}
+.about_photos > img {
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.about_photos > img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

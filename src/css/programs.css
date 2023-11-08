@@ -1,0 +1,39 @@
+.programs_page {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/programs/bgc.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 40px;
+}
+.slider_img {
+    border-radius: 20px;
+    width: 100%;
+}
+.slider_card {
+    border-radius: 32px;
+    background: #F8F398;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.slider_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.slider_wrap {
+    height: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+.programs_title {
+    color: #240747;
+    font-size: 28px;
+    font-weight: 900;
+}

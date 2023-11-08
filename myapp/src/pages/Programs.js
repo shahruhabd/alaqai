@@ -21,13 +21,12 @@ function Programs() {
     ];
   
     return (
-      <div className='programs_page'>
+      <div className='programs_page' id='program'>
         <div className='programs_title'>Программы</div>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={50}
           slidesPerView={3}
-          navigation
           loop={true}
           autoplay={{
             delay: 5000, 
@@ -38,12 +37,32 @@ function Programs() {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
           className='slider_wrap'
+          breakpoints={{
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+              navigation: false
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+              navigation: true 
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+              navigation: true 
+            },
+          }}
         >
           {cards.map((card, index) => (
             <SwiperSlide key={index} className='slider_card'>
               <h3>{card.title}</h3>
               <img src={card.image} alt={card.title} className='slider_img'/>
-              <p>{card.description}</p>
+              <p className='programm_card_desc'>{card.description}</p>
             </SwiperSlide>
           ))}
         </Swiper>

@@ -5,7 +5,7 @@ import '../css/about.css'
 
 function About() {
   return (
-    <div className='about_wrapper'>
+    <div className='about_wrapper' id='about'>
         <div className="about_header">
             <div>О нас</div>
         </div>
@@ -25,7 +25,7 @@ function About() {
         </div>
         <div className="about_photos">
             <img src={img1} alt="" />
-            <img src={img2} alt="" />
+            <img src={img2} alt="" className='about_second_img'/>
         </div>
     </div>
   )

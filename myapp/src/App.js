@@ -3,6 +3,7 @@ import Main from './pages/Main';
 import Programs from './pages/Programs';
 import Price from './pages/Price';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Programs />
         <Price /> 
         <About />
+        <Contact />
       </div>
     </div>
   );

@@ -12,10 +12,10 @@ function Main() {
     <div className='main_page'>
         <div className="nav">
             <div className="main_links">
-                <a href='#' className="link">Программы</a>
-                <a href='#' className="link">Прайс</a>
-                <a href='#' className="link">О нас</a>
-                <a href='#' className="link">Контакты</a>
+                <a href='#program' className="link">Программы</a>
+                <a href='#price' className="link">Прайс</a>
+                <a href='#about' className="link">О нас</a>
+                <a href='#contact' className="link">Контакты</a>
             </div>
             <a href="https://www.instagram.com/alaqai_study/" className='inst'>
                 <img src={inst} alt="" width={24}/>
@@ -30,7 +30,7 @@ function Main() {
             </div>
             <div className='main_info-name'>Alaqai study</div>
             <a href='https://damubala.kz/' className="damu">Участник Программы "DamuBala"</a>
-            <a href="https://wa.me/" className='wapp'>
+            <a href="https://wa.me/77016145222" className='wapp'>
                 <img src={wapp} alt="" width={24}/>
                 Свяжитесь с нами
             </a>

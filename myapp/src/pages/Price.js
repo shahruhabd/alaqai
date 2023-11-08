@@ -14,7 +14,7 @@ function Price() {
     { title: "Логопед", cost: 7 },
   ];
   return (
-    <div className="price_wrapper">
+    <div className="price_wrapper" id="price">
       <div className="price_header">
         <div className="price_fst-less">
           На секции пробное занятие{" "}

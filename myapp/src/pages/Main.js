@@ -5,6 +5,7 @@ import mark from '../img/main_page/metka.png'
 import card1 from '../img/main_page/1.png'
 import card2 from '../img/main_page/2.png'
 import card3 from '../img/main_page/3.png'
+import logo from '../img/main_page/logo.png'
 import '../css/main_page.css'
 
 function Main() {
@@ -28,7 +29,10 @@ function Main() {
                 <img src={mark} alt="" width={24}/>
                 Алматы
             </div>
-            <div className='main_info-name'>Alaqai study</div>
+            {/* <div className='main_info-name'>Alaqai study</div> */}
+            <div className='main_info-name'>
+                <img src={logo} alt={logo} style={{height: '100px'}}/>
+            </div>
             <a href='https://damubala.kz/' className="damu">Участник Программы "DamuBala"</a>
             <a href="https://wa.me/77016145222" className='wapp'>
                 <img src={wapp} alt="" width={24}/>

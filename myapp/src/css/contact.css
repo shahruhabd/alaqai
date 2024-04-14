@@ -29,10 +29,16 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+}
+.social_item:hover .social_item_text {
+    opacity: 1;
 }
 .social_item_text {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
+    color: #240747;
+    opacity: 0.7;
 }
 .contact_social_bl {
     display: flex;
@@ -50,18 +56,29 @@
     gap: 10px;
 }
 .contact_map_adress {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
 .my-maps {
     height: 400px;
     width: 500px;
 }
+.contact_devider {
+    margin: 20px;
+    color: #240747;
+    opacity: 0.7;
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .contact_maps {
         flex-direction: column;
         gap: 30px;
         padding: 30px 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    .contact_maps {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 @media only screen and (max-width: 480px) { 
@@ -73,7 +90,7 @@
     .contact_social {
         flex-direction: column;
         align-items: self-start;
-        padding: 0 40px 40px;
+        padding: 0 40px 20px;
         gap: 20px;
     }
     .social_item_text {
@@ -90,5 +107,9 @@
     }
     .contact_map_adress {
         font-size: 16px;
+    }
+    .contact_body {
+        padding: 40px 40px 0;
+        height: auto;
     }
 }

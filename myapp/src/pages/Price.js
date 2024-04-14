@@ -18,7 +18,7 @@ function Price() {
       <div className="price_header">
         <div className="price_fst-less">
           На секции пробное занятие{" "}
-          <span style={{ color: "#F8F398" }}>бесплатное</span>
+          <span style={{ color: "#F8F398", fontWeight: "700" }}>бесплатное</span>
         </div>
         <div className="price_title">Наш прайс лист</div>
         <div className="price_alert">*цена указана за 1 месяц</div>

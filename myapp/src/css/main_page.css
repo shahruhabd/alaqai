@@ -1,12 +1,12 @@
 .main_page {
-    height: 100vh;
+    /* height: 100vh; */
     background: #FCE13A;
 }
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    /* height: 10vh; */
     padding: 20px 40px;
 }
 .link {
@@ -18,7 +18,7 @@
     transition: 0.5s;
 }
 .link:hover {
-    color: #FF5959;
+    color: #e74b3c;
     font-weight: 500;
 }
 .inst {
@@ -26,7 +26,7 @@
     align-items: center;
     text-decoration: none;
     gap: 10px;
-    color: #FF5959;
+    color: #e74b3c;
     font-weight: 800;
     font-size: 18px;
 }
@@ -39,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40vh;
+    /* height: 40vh; */
 }
 .main_info-subtitle {
     color: #347474;
@@ -95,7 +95,7 @@
     display: flex;
     justify-content: space-between;
     padding: 40px;
-    height: 40vh;
+    /* height: 40vh; */
 }
 .card {
     width: 32%;
@@ -139,7 +139,6 @@
 .card_desc {
     width: 300px;
     color: #222831;
-    text-align: justify;
     font-size: 14px;
     font-weight: 500;
     margin: 12px 0 20px;
@@ -169,13 +168,24 @@
         height: auto;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 @media only screen and (max-width: 480px) {
     .cards, .main_info, .nav, .main_page {
         height: auto;
     }
     .main_page {
         background: #FCE13A;
-        padding: 20px;
+        padding: 40px;
     }
     
     .nav {
@@ -190,7 +200,7 @@
     .damu,
     .geo {
         font-size: 16px;
-        margin: 5px 0;
+        margin: 4px 0;
     }
     
     .main_info {
@@ -204,12 +214,7 @@
     
     .cards {
         flex-direction: column;
-        padding: 20px;
-    }
-    
-    .card {
-        width: 100%;
-        margin-bottom: 20px;
+        padding: 0px;
     }
     
     .card_img {
@@ -226,6 +231,7 @@
     }
     .main_info-subtitle {
         font-size: 20px;
+        margin: 0;
     }
     .wapp {
         width: 100%;
@@ -237,4 +243,5 @@
     .card_desc {
         width: 80%;
     }
+
   }

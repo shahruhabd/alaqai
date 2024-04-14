@@ -33,9 +33,6 @@ function Programs() {
             disableOnInteraction: false, 
           }}
           pagination={{ clickable: true }}
-          // scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
           className='slider_wrap'
           breakpoints={{
             // when window width is >= 320px
@@ -60,7 +57,7 @@ function Programs() {
         >
           {cards.map((card, index) => (
             <SwiperSlide key={index} className='slider_card'>
-              <h3>{card.title}</h3>
+              <h3 className='programm_card_title'>{card.title}</h3>
               <img src={card.image} alt={card.title} className='slider_img'/>
               <p className='programm_card_desc'>{card.description}</p>
             </SwiperSlide>

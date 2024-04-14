@@ -22,7 +22,7 @@ function Contact() {
             </a>
           </div>
           <div className="contact_social_bl">
-            <a className="social_item">
+            <a href="mailto:alaqai.study@gmail.com" className="social_item">
               <img src={mail} alt="" width={32} />
               <div className="social_item_text">alaqai.study@gmail.com</div>
             </a>
@@ -32,23 +32,13 @@ function Contact() {
             </a>
           </div>
         </div>
+        <hr className="contact_devider"/>
         <div className="contact_maps">
-          <div className="contact_map">
-            <div className="contact_map_adress">Карасай батыра 152/1</div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.1529927145566!2d76.90346897586738!3d43.248215278530374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883690a7b49988f%3A0x80a7fae429dfbdf4!2sAlaQai%20Study%20Qarasai!5e0!3m2!1sru!2skz!4v1699476769833!5m2!1sru!2skz"
-              style={{ border: 0 }}
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              className="my-maps"
-            ></iframe>
-          </div>
-
-          <div className="contact_map">
+        <div className="contact_map">
             <div className="contact_map_adress">2 микрорайон 40А</div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.898886474077!2d76.85791337586657!3d43.232579579534224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388369fe431a30d9%3A0xf8d7f1a8dabe2156!2sAlaQai%20Study!5e0!3m2!1sru!2skz!4v1699476871783!5m2!1sru!2skz"
+              title="2 микрорайон 40А"
               style={{ border: 0 }}
               allowfullscreen=""
               loading="lazy"
@@ -56,7 +46,12 @@ function Contact() {
               className="my-maps"
             ></iframe>
           </div>
+          <div className="contact_map">
+            <div className="contact_map_adress">Аксай-4, 36А</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1464.052698734884!2d76.83569358614739!3d43.22878770245346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDEzJzQzLjUiTiA3NsKwNTAnMTUuOSJF!5e0!3m2!1sru!2skz!4v1713095249812!5m2!1sru!2skz" title="Аксай-4, 36А" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="my-maps"></iframe>
+          </div>
         </div>
+        <span style={{'textAlign': 'center', 'margin': '20px 0'}}>Alaqai Study - Алакай Стади</span>
       </div>
     </div>
   );
